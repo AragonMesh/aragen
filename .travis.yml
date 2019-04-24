@@ -3,9 +3,9 @@ notifications:
   email: true
 node_js:
   - '8'
-install: travis_wait 30 npm start
 before_script:
   - npm prune
+  - travis_wait 30 npm start
 before_deploy: echo 'Starting publish to NPM'
 # deploy:
 #   provider: npm
