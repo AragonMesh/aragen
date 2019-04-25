@@ -4,7 +4,7 @@ notifications:
 node_js:
   - '8'
 before_script:
-  - travis_wait 30 npm start
+  - travis_wait 60 npm start
   - npm prune
 before_deploy: echo 'Starting publish to NPM'
 # deploy:
